@@ -1,13 +1,21 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { ToolbarComponent } from './components/toolbar/toolbar.component';
+import { WelcomeComponent } from './components/welcome/welcome.component';
+import { SocialMediaComponent } from './components/social-media';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [
+    RouterOutlet,
+    ToolbarComponent,
+    WelcomeComponent,
+    SocialMediaComponent,
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  title = '';
+  title = 'Gentleman App';
 }
